@@ -1,4 +1,4 @@
-=== WW JqMath ===
+=== WM JqMath ===
 Contributors: Carlos Santos, webmind.pt
 Tags: jqmath, plugin, wordpress, webmind, wm
 Requires at least: 3.3
