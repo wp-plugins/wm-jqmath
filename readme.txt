@@ -71,7 +71,7 @@ Yes, you can enter any formula anywhere you want using directly the jqMath synta
 == Changelog ==
 
 = 1.2 =
-* For the sake of a better implementation of your formulas, the shortcode "[jqmath]" now generates a <span> tag instead of a <div>
+* For the sake of a better implementation of your formulas, the shortcode "[jqmath]" now generates a &lt;span&gt; tag instead of a &lt;div&gt;
 
 = 1.1 =
 * jqMath library updated to version 0.4.3
