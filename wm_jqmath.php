@@ -4,7 +4,7 @@ Plugin Name: WM jqMath
 Plugin URI: http://webmind.pt/portfolio/wm-jqmath/
 Description: Create math formulas on your posts and pages using jqMath from MathScribe
 Author: Carlos Santos, webmind.pt
-Version: 1.1
+Version: 1.2
 Author URI: http://www.webmind.pt
 License: MIT
 */
@@ -25,7 +25,7 @@ function Generate_jqMathFormula ($p = array()) {
     ), $p));
     
     // Create formula
-    $jqMathFormula = '<div' . ($style!='' ? ' style="' . $style . '"' : '') . '>' . $expr . '</div>';
+    $jqMathFormula = '<span' . ($style!='' ? ' style="' . $style . '"' : '') . '>' . $expr . '</span>';
     return $jqMathFormula;
         
 }

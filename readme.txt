@@ -3,7 +3,7 @@ Contributors: Carlos Santos, webmind.pt
 Tags: jqmath, plugin, wordpress, webmind, wm
 Requires at least: 3.3
 Tested up to: 4.2.3
-Stable tag: 1.1
+Stable tag: 1.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -39,7 +39,7 @@ The usage of this plugin is quite straight forward. You just need to know how to
 
 Just enter the formula directly in the post/page editor using jqMath syntax or by using a shortcode
 
-= When using the syntax $$...$$ the formula appears ona new line and aligned to the center. Can I change this? =
+= When using the syntax $$...$$ the formula appears on a new line and aligned to the center. Can I change this? =
 
 Yes. If you don’t want a formula centered on a new line, just write it as $...$ instead of $$...$$.
 Please find more information about the jqMath syntax here: <a href="http://www.mathscribe.com/author/jqmath.html" target="_blank">Mathscribe jqMath</a>
@@ -69,6 +69,9 @@ Yes, you can enter any formula anywhere you want using directly the jqMath synta
 2. Viewing the post
 
 == Changelog ==
+
+= 1.2 =
+* For the sake of a better implementation of your formulas, the shortcode "[jqmath]" now generates a <span> tag instead of a <div>
 
 = 1.1 =
 * jqMath library updated to version 0.4.3
