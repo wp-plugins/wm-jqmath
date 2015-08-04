@@ -1,9 +1,9 @@
-=== WW JqMath ===
+=== WM JqMath ===
 Contributors: Carlos Santos, webmind.pt
 Tags: jqmath, plugin, wordpress, webmind, wm
 Requires at least: 3.3
-Tested up to: 4.2.2
-Stable tag: 1.0
+Tested up to: 4.2.3
+Stable tag: 1.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -39,17 +39,25 @@ The usage of this plugin is quite straight forward. You just need to know how to
 
 Just enter the formula directly in the post/page editor using jqMath syntax or by using a shortcode
 
-= How can I align the formula? =
+= When using the syntax $$...$$ the formula appears on a new line and aligned to the center. Can I change this? =
 
-The formula is always displayed aligned in the center and in a different paragraph. However, you can try to workaround this with tables or columns.
+Yes. If you don’t want a formula centered on a new line, just write it as $...$ instead of $$...$$.
+Please find more information about the jqMath syntax here: <a href="http://www.mathscribe.com/author/jqmath.html" target="_blank">Mathscribe jqMath</a>
 
 = How can I change the color of the formula? =
 
 Using the shortcode and the CSS style color. Example: [jqmath expr="$$y=f(x)$$" style="color: darkgreen"]
+You can also use jqMqth syntax. Please read more information by following the link above.
 
 = Can I change the font size for the formula? =
 
 Using the shortcode and the CSS style font-size. Example: [jqmath expr="$$y=f(x)$$" style="font-size: 16pt"]
+You can also use jqMqth syntax. Please read more information by following the link above.
+
+= Where can I find more information to style formulas? =
+* <a href="http://www.mathscribe.com/author/jqmath.html" target="_blank">Mathscribe jqMath</a>
+* <a href="http://stackoverflow.com/questions/11805054/jqmath-highlight-box-like-bbox-in-mathjax-mathjs" target="_blank">http://stackoverflow.com/questions/11805054/jqmath-highlight-box-like-bbox-in-mathjax-mathjs</a>
+* <a href="http://stackoverflow.com/questions/12106035/is-it-possible-to-style-jqmath-display-with-another-font-on-webpages" target="_blank">http://stackoverflow.com/questions/12106035/is-it-possible-to-style-jqmath-display-with-another-font-on-webpages</a>
 
 = Can I add multiple formulas? =
 
@@ -60,3 +68,18 @@ Yes, you can enter any formula anywhere you want using directly the jqMath synta
 1. Editing a post with math formulas
 2. Viewing the post
 
+== Changelog ==
+
+= 1.2 =
+* For the sake of a better implementation of your formulas, the shortcode "[jqmath]" now generates a <span> tag instead of a <div>
+
+= 1.1 =
+* jqMath library updated to version 0.4.3
+
+= 1.0 =
+* First release
+
+== Upgrade Notice ==
+
+= 1.1 =
+This version fixes a security related bug. Please upgrade ASAP.
