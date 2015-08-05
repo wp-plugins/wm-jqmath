@@ -3,7 +3,7 @@ Contributors: Carlos Santos, webmind.pt
 Tags: jqmath, plugin, wordpress, webmind, wm
 Requires at least: 3.3
 Tested up to: 4.2.3
-Stable tag: 1.2
+Stable tag: 1.3
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -20,7 +20,8 @@ Current WM jqMath features:
    *  Insert directly a jqMath expression on your post or page like: $$y={-b±√{b^2-4ac}}/{2a}$$
    
    *  Insert a jqMath using a shortcode with CSS styles like: [jqmath expr="$$y={-b±√{b^2-4ac}}/{2a}$$" style="color: navy; font-size: 20pt"]
-   
+
+In order to enable jqMath for your post, you need to add the shortcode [enable_jqmath] at the beginning of your post.
 
 The jqMath library was written by Dave Barton from Mathscribe. You can find further information regarding jqMath by clicking <a href="http://www.mathscribe.com/author/jqmath.html" target="_blank">here</a>
 
@@ -34,6 +35,9 @@ We want to thank Dave for developing this great library!
 == Frequently Asked Questions ==
 
 The usage of this plugin is quite straight forward. You just need to know how to use the jqMath syntax. However, if you have any questions please read this FAQ:
+
+= The formulas are not rendering =
+Make sure you added the shortcode [enable_jqmath] at the beginning of your post.
 
 = How can I insert a formula? =
 
@@ -70,6 +74,10 @@ Yes, you can enter any formula anywhere you want using directly the jqMath synta
 
 == Changelog ==
 
+= 1.3 =
+* You now need to add the shortcode [enable_jqmath] at the beginning of your post to enable jqMath!
+* This will enable you to write other posts where you want to use the symbol $ without having jqMath trying to render a formula that does not exist. For example, imagine you want to write a post with examples in PHP and without formulas. The result could be a mess! 
+
 = 1.2 =
 * For the sake of a better implementation of your formulas, the shortcode "[jqmath]" now generates a &lt;span&gt; tag instead of a &lt;div&gt;
 
@@ -80,6 +88,9 @@ Yes, you can enter any formula anywhere you want using directly the jqMath synta
 * First release
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Important: You now need to add the shortcode [enable_jqmath] at the beginning of your post to enable jqMath!
 
 = 1.1 =
 This version fixes a security related bug. Please upgrade ASAP.
